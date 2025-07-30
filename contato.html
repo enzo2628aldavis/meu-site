@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento do eBook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    
+</style>
+<header class="menu">
+    <a href="menu.html">Página Inicial</a>
+    <a href="contato.html">Contato</a>
+</header>
+<body>
+  <div class="pagamento-container">
+    <h1>Pagamento do eBook</h1>
+    <p class="produto-nome">🧠 Mindset Vencedor</p>
+    <p class="preco">Valor: <strong>R$ 29,90</strong></p>
+
+    <form action="https://sualoja.com/pagar" method="POST">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="cartao">Número do Cartão:</label>
+      <input type="text" id="cartao" name="cartao" maxlength="16" required>
+
+      <label for="validade">Validade (MM/AA):</label>
+      <input type="text" id="validade" name="validade" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" maxlength="3" required>
+
+      <button type="submit">Finalizar Pagamento</button>
+    </form>
+  </div>
+</body>
+</html>
